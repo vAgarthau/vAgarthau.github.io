@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="800"
+   height="800"
+   viewBox="0 0 211.66666 211.66667"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="..\Desktop\bitmap.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="vAgarthau.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:export-bgcolor="#00000000"
+     inkscape:zoom="0.17215734"
+     inkscape:cx="737.69728"
+     inkscape:cy="688.32384"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter11"
+       x="-0.030327578"
+       y="-0.066917335"
+       width="1.0859281"
+       height="1.1895991">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         id="feFlood10" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="3.000000"
+         id="feGaussianBlur10" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="6.000000"
+         dy="6.000000"
+         id="feOffset10" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite10" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite11" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter25"
+       x="-0.0054516031"
+       y="-0.060366425"
+       width="1.0184749"
+       height="1.1133711">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         id="feFlood24" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="0.300000"
+         id="feGaussianBlur24" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="1.000000"
+         dy="-0.100000"
+         id="feOffset24" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite24" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite25" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:94.0083px;font-family:Ponnala;-inkscape-font-specification:Ponnala;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#550000;stroke-width:0.489626;filter:url(#filter11)"
+       x="129.60178"
+       y="254.23151"
+       id="text1"
+       transform="matrix(0.63594633,0,0,0.63594633,-50.924708,-52.359836)"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="fill:#550000;stroke-width:0.489626"
+         x="129.60178"
+         y="254.23151">వాగర్థౌ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.1522px;font-family:Garamond;-inkscape-font-specification:'Garamond Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#550000;stroke-width:0.0789166;filter:url(#filter25)"
+       x="17.484228"
+       y="131.64656"
+       id="text13"><tspan
+         sodipodi:role="line"
+         id="tspan13"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Garamond;-inkscape-font-specification:'Garamond Bold';stroke-width:0.0789166"
+         x="17.484228"
+         y="131.64656">Pranathi | Praphulla</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:94.0083px;font-family:Ponnala;-inkscape-font-specification:Ponnala;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#550000;stroke-width:0.489626;filter:url(#filter11)"
+       x="2284.4944"
+       y="254.23151"
+       id="text2"
+       transform="matrix(0.63594633,0,0,0.63594633,-1528.0933,-386.48883)"
+       inkscape:export-filename="..\Desktop\text2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.489626"
+         x="2284.4944"
+         y="254.23151"
+         id="tspan5">తతో రావణనీతాయాః సీతాయాః శత్రుకర్శనః</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.489626"
+         x="2284.4944"
+         y="371.74188"
+         id="tspan8">ఇయేష పదమన్వేష్టుం చారణాచరితే పథి </tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.489626"
+         x="2284.4944"
+         y="489.25226"
+         id="tspan11" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:55.4729px;font-family:Ponnala;-inkscape-font-specification:Ponnala;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#782121;stroke-width:0.489626;filter:url(#filter11)"
+       x="2284.4944"
+       y="254.23151"
+       id="text15"
+       transform="matrix(0.63594633,0,0,0.63594633,-1246.8463,-237.41251)"
+       inkscape:export-filename="..\Desktop\text2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         style="font-size:55.4729px;text-align:center;text-anchor:middle;fill:#782121;stroke-width:0.489626"
+         x="2284.4944"
+         y="254.23151"
+         id="tspan15">-సుందరకాండ | 1.1</tspan></text>
+  </g>
+</svg>

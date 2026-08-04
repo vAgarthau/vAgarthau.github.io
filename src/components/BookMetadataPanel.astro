@@ -1,0 +1,32 @@
+---
+import type { BookMetadata, Sarga } from "@lib/library";
+
+type Props = {
+  book: BookMetadata;
+  sargas: Sarga[];
+};
+
+const { book, sargas } = Astro.props;
+const completed = sargas.length;
+const total = book.totalSargas ?? completed;
+const rows = [
+  ["గ్రంథకర్త", book.author],
+  ["మూలభాష", book.originalLanguage],
+  ["విషయం", book.subject],
+  ["మొత్తం సర్గలు", String(total)],
+  ["ప్రస్తుత స్థితి", `${completed} / ${total} పూర్తయ్యాయి`],
+].filter((row): row is [string, string] => Boolean(row[1]));
+---
+
+<section class="mx-auto mb-12 max-w-3xl border-y border-[rgba(123,30,34,0.22)] py-8 text-center">
+  <p class="telugu text-2xl text-[var(--color-gold)]">గ్రంథ పరిచయం</p>
+  <h2 class="telugu mt-3 text-5xl font-normal leading-tight text-[var(--color-accent)]">{book.titleTelugu ?? book.title}</h2>
+  <dl class="mt-8 grid gap-x-8 gap-y-5 text-left sm:grid-cols-2">
+    {rows.map(([label, value]) => (
+      <div class="border-b border-[rgba(184,144,58,0.22)] pb-3">
+        <dt class="telugu text-xl text-[var(--color-gold)]">{label}</dt>
+        <dd class="telugu mt-1 text-2xl leading-8">{value}</dd>
+      </div>
+    ))}
+  </dl>
+</section>

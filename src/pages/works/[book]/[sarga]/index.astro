@@ -1,0 +1,54 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import PageTitle from "@components/PageTitle.astro";
+import VerseBlock from "@components/VerseBlock.astro";
+import { getSarga, getSargaPaths, getSargas } from "@lib/library";
+
+export async function getStaticPaths() {
+  const paths = await getSargaPaths();
+  return paths.map((path) => ({ params: path }));
+}
+
+const bookSlug = Astro.params.book!;
+const sargaSlug = Astro.params.sarga!;
+const sarga = await getSarga(bookSlug, sargaSlug);
+const allSargas = await getSargas(bookSlug);
+const sargaIndex = allSargas.findIndex((item) => item.slug === sargaSlug);
+const previousSarga = sargaIndex > 0 ? allSargas[sargaIndex - 1] : undefined;
+const nextSarga = sargaIndex >= 0 && sargaIndex < allSargas.length - 1 ? allSargas[sargaIndex + 1] : undefined;
+
+if (!sarga) {
+  return Astro.redirect("/404/");
+}
+---
+
+<BaseLayout title={`${sarga.title} | ${sarga.book.title} | వాగర్థౌ`} description={sarga.book.description}>
+  <PageTitle
+    eyebrow={sarga.book.title}
+    title={sarga.title}
+    subtitle={`${sarga.verses.length} శ్లోకాలు`}
+  />
+
+  <nav class="telugu mb-8 flex flex-wrap justify-center gap-3 text-2xl" aria-label="సర్గ మార్గదర్శకం">
+    <a class="inline-flex h-12 items-center justify-center border border-[rgba(123,30,34,0.22)] px-5 transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"" href={`/works/${sarga.book.slug}/`}>← సర్గల జాబితా</a>
+    {previousSarga && <a class="inline-flex h-12 items-center justify-center border border-[rgba(123,30,34,0.22)] px-5 transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"" href={`/works/${sarga.book.slug}/${previousSarga.slug}/`}>← మునుపటి సర్గ</a>}
+    {nextSarga && <a class="inline-flex h-12 items-center justify-center border border-[rgba(123,30,34,0.22)] px-5 transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"" href={`/works/${sarga.book.slug}/${nextSarga.slug}/`}>తరువాతి సర్గ →</a>}
+  </nav>
+
+  <div class="mx-auto max-w-4xl">
+    {sarga.verses.map((verse, index) => (
+      <VerseBlock
+        verse={verse}
+        id={`verse-${verse.number}`}
+        previousHref={index > 0 ? `#verse-${sarga.verses[index - 1].number}` : undefined}
+        nextHref={index < sarga.verses.length - 1 ? `#verse-${sarga.verses[index + 1].number}` : undefined}
+      />
+    ))}
+  </div>
+
+  <nav class="telugu mt-10 flex flex-wrap justify-center gap-3 text-2xl" aria-label="సర్గ మార్గదర్శకం">
+    <a class="border border-[rgba(123,30,34,0.22)] px-4 py-2 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]" href={`/works/${sarga.book.slug}/`}>← సర్గల జాబితా</a>
+    {previousSarga && <a class="border border-[rgba(123,30,34,0.22)] px-4 py-2 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]" href={`/works/${sarga.book.slug}/${previousSarga.slug}/`}>← మునుపటి సర్గ</a>}
+    {nextSarga && <a class="border border-[rgba(123,30,34,0.22)] px-4 py-2 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]" href={`/works/${sarga.book.slug}/${nextSarga.slug}/`}>తరువాతి సర్గ →</a>}
+  </nav>
+</BaseLayout>

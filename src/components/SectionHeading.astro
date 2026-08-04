@@ -1,0 +1,13 @@
+---
+type Props = {
+  title: string;
+};
+
+const { title } = Astro.props;
+---
+
+<div class="mb-8 flex items-center gap-4">
+  <div class="h-px flex-1 bg-[rgba(184,144,58,0.34)]"></div>
+  <h2 class="telugu text-center text-4xl font-normal leading-tight text-[var(--color-accent)]">{title}</h2>
+  <div class="h-px flex-1 bg-[rgba(184,144,58,0.34)]"></div>
+</div>

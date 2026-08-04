@@ -1,0 +1,17 @@
+---
+type Props = {
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+  teluguTitle?: string;
+};
+
+const { eyebrow, title, subtitle, teluguTitle } = Astro.props;
+---
+
+<section class="mb-10 border-b border-[rgba(184,144,58,0.28)] pb-8">
+  {eyebrow && <p class="telugu mb-3 text-2xl text-[var(--color-accent)]">{eyebrow}</p>}
+  <h1 class="telugu text-5xl font-normal leading-tight text-[var(--color-accent)] sm:text-6xl">{title}</h1>
+  {teluguTitle && <p class="telugu mt-3 text-4xl leading-tight">{teluguTitle}</p>}
+  {subtitle && <p class="telugu mt-4 max-w-3xl text-2xl leading-9 text-[rgba(43,43,43,0.78)]">{subtitle}</p>}
+</section>

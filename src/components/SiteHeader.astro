@@ -1,0 +1,24 @@
+---
+const links = [
+  { href: "/", label: "ముఖపుటం" },
+  { href: "/works/", label: "కృతులు" },
+  { href: "/about/", label: "పరిచయం" },
+];
+---
+
+<header class="border-b border-[rgba(123,30,34,0.14)] bg-[rgba(250,248,244,0.92)]">
+  <div class="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-5 py-4 sm:px-8 lg:px-10">
+    <a href="/" class="flex min-w-0 items-center" aria-label="వాగర్థౌ">
+      <img src="/icon.svg" alt="వాగర్థౌ" class="h-24 w-auto shrink-0 object-contain sm:h-28" />
+    </a>
+    <nav aria-label="ప్రధాన మార్గదర్శకం">
+      <ul class="telugu flex items-center gap-5 text-[1.55rem] leading-none text-[rgba(43,43,43,0.86)] sm:gap-7">
+        {links.map((link) => (
+          <li>
+            <a class="hover:text-[var(--color-accent)]" href={link.href}>{link.label}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --color-paper: #faf8f4;
+  --color-ink: #2b2b2b;
+  --color-accent: #7b1e22;
+  --color-gold: #b8903a;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: "EB Garamond", Georgia, serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(90deg, rgba(123, 30, 34, 0.035) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(184, 144, 58, 0.04) 1px, transparent 1px),
+    var(--color-paper);
+  background-size: 42px 42px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.telugu {
+  font-family: "Sree Krushnadevaraya", serif;
+}
+
+.transliteration {
+  font-family: "EB Garamond", Georgia, serif;
+  font-style: italic;
+}
+
+::selection {
+  background: rgba(184, 144, 58, 0.35);
+}

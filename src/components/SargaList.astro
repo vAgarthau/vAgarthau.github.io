@@ -1,0 +1,24 @@
+---
+import type { Sarga } from "@lib/library";
+
+type Props = {
+  bookSlug: string;
+  sargas: Sarga[];
+};
+
+const { bookSlug, sargas } = Astro.props;
+---
+
+<ol class="grid gap-3">
+  {sargas.map((sarga) => (
+    <li>
+      <a
+        href={`/works/${bookSlug}/${sarga.slug}/`}
+        class="telugu flex items-center justify-between gap-4 border border-[rgba(123,30,34,0.16)] px-5 py-4 text-3xl hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+      >
+        <span>{sarga.title}</span>
+        <span class="text-2xl text-[rgba(43,43,43,0.62)]">{sarga.verses.length} శ్లోకాలు</span>
+      </a>
+    </li>
+  ))}
+</ol>

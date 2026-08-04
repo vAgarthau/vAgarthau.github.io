@@ -1,0 +1,28 @@
+---
+import type { Verse } from "@lib/library";
+
+type Props = {
+  verse: Verse;
+  id: string;
+  previousHref?: string;
+  nextHref?: string;
+};
+
+const { verse, id, previousHref, nextHref } = Astro.props;
+---
+
+<article id={id} class="scroll-mt-8 border-b border-[rgba(184,144,58,0.24)] py-10">
+  <p class="telugu mb-4 text-2xl text-[var(--color-gold)]">శ్లోకం {verse.number}</p>
+  <div class="telugu whitespace-pre-line text-[2rem] leading-[1.9] text-[var(--color-ink)] sm:text-[2.3rem]">
+  {verse.telugu}
+  </div>
+  {verse.notes && (
+    <div class="telugu mt-6 border-l-2 border-[var(--color-gold)] pl-4 text-2xl leading-9 text-[rgba(43,43,43,0.78)]">
+      {verse.notes}
+    </div>
+  )}
+  <nav class="telugu mt-8 flex flex-wrap gap-3 text-2xl" aria-label={`శ్లోకం ${verse.number} మార్గదర్శకం`}>
+    {previousHref && <a class="inline-flex h-12 items-center justify-center border border-[rgba(123,30,34,0.22)] px-5 transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]" hover:text-[var(--color-accent)]" href={previousHref}>మునుపటి శ్లోకం</a>}
+    {nextHref && <a class="inline-flex h-12 items-center justify-center border border-[rgba(123,30,34,0.22)] px-5 transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]" href={nextHref}>తరువాతి శ్లోకం</a>}
+  </nav>
+</article>

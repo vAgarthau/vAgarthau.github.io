@@ -1,0 +1,31 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import BookMetadataPanel from "@components/BookMetadataPanel.astro";
+import SectionHeading from "@components/SectionHeading.astro";
+import SargaList from "@components/SargaList.astro";
+import { getBooks, getSargas } from "@lib/library";
+
+export async function getStaticPaths() {
+  const books = await getBooks();
+  return books.map((book) => ({ params: { book: book.slug } }));
+}
+
+const bookSlug = Astro.params.book!;
+const books = await getBooks();
+const book = books.find((item) => item.slug === bookSlug);
+const sargas = await getSargas(bookSlug);
+
+if (!book) {
+  return Astro.redirect("/404/");
+}
+---
+
+<BaseLayout title={`${book.title} | వాగర్థౌ`} description={book.description}>
+  <BookMetadataPanel book={book} sargas={sargas} />
+
+  <section aria-labelledby="sargas">
+    <SectionHeading title="సర్గలు" />
+    <div id="sargas" class="sr-only">సర్గలు</div>
+    <SargaList bookSlug={book.slug} sargas={sargas} />
+  </section>
+</BaseLayout>

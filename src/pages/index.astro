@@ -1,0 +1,51 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import BookCard from "@components/BookCard.astro";
+import SectionHeading from "@components/SectionHeading.astro";
+import { getBooks, getLibraryUpdates } from "@lib/library";
+
+const books = await getBooks();
+const updates = await getLibraryUpdates();
+
+---
+
+<BaseLayout title="వాగర్థౌ" description="తెలుగు సాహిత్య డిజిటల్ గ్రంథాలయం.">
+
+  <section class="mx-auto mb-20 max-w-4xl text-center" aria-label="రఘువంశ శ్లోకం">
+   <div class="telugu text-2xl leading-relaxed text-[var(--color-ink)] sm:text-4xl">
+  <p>వాగర్థావివ సంపృక్తౌ వాగర్థప్రతిపత్తయే ।</p>
+  <p class="mt-0.25">జగతః పితరౌ వందే పార్వతీపరమేశ్వరౌ ॥</p>
+</div>
+  </section>
+
+
+  <section class="mb-20" aria-labelledby="works-heading">
+    <SectionHeading title="కృతులు" />
+      <section class="mx-auto mb-20 max-w-3xl text-center">
+  <p class="telugu text-3xl leading-10 text-[rgba(43,43,43,0.78)]">
+     తెలుగు లిప్యంతరణం అలభ్యంగా ఉన్న కొన్ని సంస్కృత సాహిత్యమణులను యూనికోడ్ రూపంలో భద్రపరచాలనే సంకల్పం.
+  </p>
+  </section>
+    <div id="works-heading" class="sr-only">కృతులు</div>
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {books.map((book) => <BookCard book={book} />)}
+    </div>
+  </section>
+
+  <section class="mb-20" aria-labelledby="updates-heading">
+    <SectionHeading title="నవీకరణలు" />
+    <div id="updates-heading" class="sr-only">నవీకరణలు</div>
+    <ol class="mx-auto max-w-3xl border-l border-[rgba(123,30,34,0.2)] pl-6">
+      {updates.map((update) => (
+        <li class="relative mb-8 last:mb-0">
+          <span class="absolute -left-[31px] top-2 h-3 w-3 rounded-full border border-[var(--color-accent)] bg-[var(--color-paper)]"></span>
+          <time class="text-lg text-[var(--color-gold)]" datetime={update.date}>{update.date}</time>
+          <p class="telugu mt-2 text-2xl leading-8">
+            <span class="text-[var(--color-accent)]">{update.book}</span> — {update.description}
+          </p>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+</BaseLayout>
