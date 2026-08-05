@@ -1,0 +1,58 @@
+---
+import type { Sarga } from "@lib/library";
+
+type Props = {
+  sargas: Sarga[];
+  currentSarga: string;
+  bookSlug: string;
+};
+
+const {
+  sargas,
+  currentSarga,
+  bookSlug,
+} = Astro.props;
+---
+
+<nav
+  class="rounded-xl border border-[rgba(184,144,58,.22)] bg-[rgba(250,248,244,.92)] p-4 shadow-sm"
+>
+
+  <h2 class="telugu mb-4 text-center text-2xl text-[var(--color-accent)]">
+    సర్గలు
+  </h2>
+
+  <div
+    class="flex flex-wrap justify-center gap-2 overflow-y-auto"
+    style="max-height: calc(100vh - 12rem);"
+  >
+
+    {
+      sargas.map((sarga) => {
+
+        const number =
+          sarga.order.toString();
+
+        return (
+
+          <a
+            href={`/works/${bookSlug}/${sarga.slug}`}
+
+            class:list={[
+              "inline-flex h-9 min-w-9 items-center justify-center rounded border border-[rgba(184,144,58,0.35)] px-3 transition-all duration-200 hover:border-[var(--color-accent)] hover:bg-[rgba(123,30,34,0.06)] hover:text-[var(--color-accent)]",
+
+              sarga.slug === currentSarga &&
+              "bg-[rgba(184,144,58,0.15)] border-[var(--color-gold)] text-[var(--color-accent)] font-semibold",
+            ]}
+          >
+            {number}
+          </a>
+
+        );
+
+      })
+    }
+
+  </div>
+
+</nav>

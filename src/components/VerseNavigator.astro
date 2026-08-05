@@ -1,0 +1,57 @@
+---
+import type { Verse } from "@lib/library";
+
+type Props = {
+  verses: Verse[];
+  currentVerse?: string;
+  currentBook?: string;
+  currentSarga?: string;
+  mode?: "sarga" | "sloka";
+};
+
+const {
+  verses,
+  currentVerse,
+  currentBook,
+  currentSarga,
+  mode = "sarga",
+} = Astro.props;
+---
+<div id="verse-nav-wrapper">
+<nav    
+  id="verse-navigator"
+  class="rounded-xl border border-[rgba(184,144,58,.22)] bg-[rgba(250,248,244,.92)] p-4 shadow-sm"
+  aria-label="శ్లోకాల జాబితా"
+>
+
+  <h2 class="telugu mb-5 text-center text-2xl text-[var(--color-accent)]">
+    శ్లోకాలు
+  </h2>
+
+  <div
+    class="flex flex-wrap justify-center gap-2 overflow-y-auto pr-1"
+    style="max-height: calc(100vh - 12rem);"
+    >
+
+    {verses.map((verse) => (
+      <a
+        id={`nav-verse-${verse.number}`}
+        href={
+            mode === "sarga"
+            ? `#verse-${verse.number}`
+            : `/works/${currentBook}/${currentSarga}/sloka-${verse.number}`
+            }
+        class:list={[
+  "inline-flex h-9 min-w-9 items-center justify-center rounded border border-[rgba(184,144,58,0.35)] px-3 transition-all duration-200 hover:border-[var(--color-accent)] hover:bg-[rgba(123,30,34,0.06)] hover:text-[var(--color-accent)]",
+currentVerse === verse.number &&
+  "bg-[var(--color-paper)] border-[var(--color-gold)] text-[var(--color-accent)] font-semibold ring-2 ring-[rgba(184,144,58,0.25)]",
+]}
+      >
+        {verse.number}
+      </a>
+    ))}
+
+  </div>
+
+</nav>
+</div>

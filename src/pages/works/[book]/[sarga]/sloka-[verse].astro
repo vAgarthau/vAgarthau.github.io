@@ -1,0 +1,162 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import PageTitle from "@components/PageTitle.astro";
+import VerseNavigator from "@components/VerseNavigator.astro";
+import SargaNavigator from "@components/SargaNavigator.astro";
+
+import {
+  getVerse,
+  getVersePaths,
+  getSarga,
+  getSargas,
+} from "@lib/library";
+
+export async function getStaticPaths() {
+  const paths = await getVersePaths();
+
+  return paths.map((path) => ({
+    params: path,
+  }));
+}
+
+const bookSlug = Astro.params.book!;
+const sargaSlug = Astro.params.sarga!;
+const verseNumber = Astro.params.verse!;
+
+const verse = await getVerse(bookSlug, sargaSlug, verseNumber);
+const sarga = await getSarga(bookSlug, sargaSlug);
+const allSargas = await getSargas(bookSlug);
+
+if (!verse || !sarga) {
+  return Astro.redirect("/404/");
+}
+
+const index = sarga.verses.findIndex(
+  (v) => v.number === verse.number,
+);
+
+const previous =
+  index > 0
+    ? sarga.verses[index - 1]
+    : undefined;
+
+const next =
+  index < sarga.verses.length - 1
+    ? sarga.verses[index + 1]
+    : undefined;
+---
+
+<BaseLayout
+  title={`శ్లోకం ${verse.number} | ${sarga.title}`}
+>
+
+<PageTitle
+  eyebrow={sarga.book.title}
+  title={`శ్లోకం ${verse.number}`}
+  subtitle={sarga.title}
+/>
+
+<!-- Mobile navigator -->
+<div class="mb-8 lg:hidden">
+  <VerseNavigator
+    verses={sarga.verses}
+    currentVerse={verse.number}
+    currentBook={bookSlug}
+    currentSarga={sargaSlug}
+    mode="sloka"
+  />
+</div>
+
+<div class="mx-auto max-w-7xl lg:grid lg:grid-cols-[130px_minmax(0,1fr)_160px] lg:gap-6">
+
+  <!-- LEFT SIDEBAR -->
+  <aside class="hidden lg:block">
+
+    <div class="sticky top-24">
+
+      <SargaNavigator
+        sargas={allSargas}
+        currentSarga={sargaSlug}
+        bookSlug={bookSlug}
+      />
+
+    </div>
+
+  </aside>
+
+  <!-- READING COLUMN -->
+  <div class="min-w-0">
+
+    <article class="border-b border-[rgba(184,144,58,0.24)] pb-10">
+
+      <div class="sloka whitespace-pre-line text-[2rem] leading-[1.9] text-[var(--color-ink)] sm:text-[2rem]">
+        {verse.telugu}
+      </div>
+
+    </article>
+
+    <section class="mt-10">
+
+      <h2 class="telugu mb-6 text-4xl text-[var(--color-accent)]">
+        వివరాలు
+      </h2>
+
+      <div class="telugu text-2xl leading-10 text-[rgba(43,43,43,.78)]">
+        ఈ శ్లోకానికి సంబంధించిన వివరణ త్వరలో చేర్చబడుతుంది.
+      </div>
+
+    </section>
+
+    <nav
+      class="telugu mt-12 flex flex-wrap justify-center gap-3 text-2xl"
+    >
+
+      {previous && (
+        <a
+          class="inline-flex h-12 items-center justify-center border border-[rgba(123,30,34,0.22)] px-5 transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+          href={`/works/${bookSlug}/${sargaSlug}/sloka-${previous.number}`}
+        >
+          ← మునుపటి శ్లోకం
+        </a>
+      )}
+
+      <a
+        class="inline-flex h-12 items-center justify-center border border-[rgba(184,144,58,.45)] px-5 transition-colors hover:border-[var(--color-gold)]"
+        href={`/works/${bookSlug}/${sargaSlug}`}
+      >
+        ← సర్గకు తిరిగి
+      </a>
+
+      {next && (
+        <a
+          class="inline-flex h-12 items-center justify-center border border-[rgba(123,30,34,0.22)] px-5 transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+          href={`/works/${bookSlug}/${sargaSlug}/sloka-${next.number}`}
+        >
+          తరువాతి శ్లోకం →
+        </a>
+      )}
+
+    </nav>
+
+  </div>
+
+  <!-- RIGHT SIDEBAR -->
+  <aside class="hidden lg:block">
+
+    <div class="sticky top-24 translate-x-12">
+
+      <VerseNavigator
+        verses={sarga.verses}
+        currentVerse={verse.number}
+        currentBook={bookSlug}
+        currentSarga={sargaSlug}
+        mode="sloka"
+      />
+
+    </div>
+
+  </aside>
+
+</div>
+
+</BaseLayout>

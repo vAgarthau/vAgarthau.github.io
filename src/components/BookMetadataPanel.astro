@@ -14,7 +14,6 @@ const rows = [
   ["మూలభాష", book.originalLanguage],
   ["విషయం", book.subject],
   ["మొత్తం సర్గలు", String(total)],
-  ["ప్రస్తుత స్థితి", `${completed} / ${total} పూర్తయ్యాయి`],
 ].filter((row): row is [string, string] => Boolean(row[1]));
 ---
 

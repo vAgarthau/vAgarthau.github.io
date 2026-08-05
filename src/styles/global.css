@@ -46,6 +46,11 @@ a {
   font-family: "Sree Krushnadevaraya", serif;
 }
 
+.sloka {
+  font-family: "Tenali Ramakrishna", serif;
+    font-weight: 600
+}
+
 .transliteration {
   font-family: "EB Garamond", Georgia, serif;
   font-style: italic;
@@ -53,4 +58,8 @@ a {
 
 ::selection {
   background: rgba(184, 144, 58, 0.35);
+}
+
+html {
+  scroll-behavior: smooth;
 }

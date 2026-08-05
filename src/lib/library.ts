@@ -221,3 +221,41 @@ export async function getLibraryStats() {
     lastUpdated: updates[0]?.date ?? "",
   };
 }
+
+export async function getVerse(
+  bookSlug: string,
+  sargaSlug: string,
+  verseNumber: string,
+) {
+  const sarga = await getSarga(bookSlug, sargaSlug);
+
+  if (!sarga) {
+    return undefined;
+  }
+
+  return sarga.verses.find(
+    (verse) => verse.number === verseNumber,
+  );
+}
+
+export async function getVersePaths() {
+  const paths = [];
+
+  const books = await getBooks();
+
+  for (const book of books) {
+    const sargas = await getSargas(book.slug);
+
+    for (const sarga of sargas) {
+      for (const verse of sarga.verses) {
+        paths.push({
+          book: book.slug,
+          sarga: sarga.slug,
+          verse: verse.number,
+        });
+      }
+    }
+  }
+
+  return paths;
+}
