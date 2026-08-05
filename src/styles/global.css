@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Sree Krushnadevaraya";
+  src: url("/fonts/Sree Krushnadevaraya.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sree Krushnadevaraya";
+  src: url("/fonts/Sree Krushnadevaraya-Italic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
 :root {
   --color-paper: #faf8f4;
   --color-ink: #2b2b2b;
