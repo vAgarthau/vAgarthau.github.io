@@ -48,7 +48,7 @@ const next =
 
 <BaseLayout
   title={`శ్లోకం ${verse.number} | ${sarga.title}`}
->
+wide>
 
 <PageTitle
   eyebrow={sarga.book.title}
@@ -89,7 +89,8 @@ const next =
 
     <article class="border-b border-[rgba(184,144,58,0.24)] pb-10">
 
-      <div class="sloka whitespace-pre-line text-[2rem] leading-[1.9] text-[var(--color-ink)] sm:text-[2rem]">
+      <div class="sloka whitespace-pre-line text-[var(--color-ink)]"
+        style="font-size: clamp(1.375rem, 1.6vw + 1rem, 2rem); line-height: 1.9;">
         {verse.telugu}
       </div>
 

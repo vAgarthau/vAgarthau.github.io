@@ -24,7 +24,7 @@ if (!sarga) {
 }
 ---
 
-<BaseLayout title={`${sarga.title} | ${sarga.book.title} | వాగర్థౌ`} description={sarga.book.description}>
+<BaseLayout title={`${sarga.title} | ${sarga.book.title} | వాగర్థౌ`} description={sarga.book.description} wide>
   <PageTitle
     eyebrow={sarga.book.title}
     title={sarga.title}
@@ -64,7 +64,7 @@ if (!sarga) {
       <VerseNavigator verses={sarga.verses} />
     </div>
 
-    <div class="mx-auto max-w-5xl">
+    <div class="mx-auto max-w-6xl">
       {sarga.verses.map((verse, index) => (
         <VerseBlock
           verse={verse}

@@ -5,11 +5,13 @@ import SiteHeader from "@components/SiteHeader.astro";
 type Props = {
   title?: string;
   description?: string;
+  wide?: boolean;
 };
 
 const {
   title = "vAgarthau",
   description = "A digital library for Telugu works.",
+  wide = false
 } = Astro.props;
 ---
 
@@ -28,7 +30,7 @@ const {
   </head>
   <body class="min-h-screen text-[var(--color-ink)]">
     <SiteHeader />
-    <main class="mx-auto w-full max-w-6xl px-5 py-10 sm:px-8 lg:px-10">
+    <main class:list={["mx-auto w-full px-5 py-10 sm:px-8 lg:px-10", wide ? "max-w-[1600px]" : "max-w-6xl"]}>
       <slot />
     </main>
   </body>
