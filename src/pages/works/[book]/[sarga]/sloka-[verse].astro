@@ -3,6 +3,7 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import PageTitle from "@components/PageTitle.astro";
 import VerseNavigator from "@components/VerseNavigator.astro";
 import SargaNavigator from "@components/SargaNavigator.astro";
+import ScriptToggle from "@components/ScriptToggle.astro";
 
 import {
   getVerse,
@@ -84,30 +85,26 @@ wide>
 
   </aside>
 
-  <!-- READING COLUMN -->
-  <div class="min-w-0">
+ <!-- READING COLUMN -->
+<div class="min-w-0">
 
-    <article class="border-b border-[rgba(184,144,58,0.24)] pb-10">
+  <article class="border-b border-[rgba(184,144,58,0.24)] pb-10">
+    <ScriptToggle verse={verse} />
+  </article>
 
-      <div class="sloka whitespace-pre-line text-[var(--color-ink)]"
-        style="font-size: clamp(1.375rem, 1.6vw + 1rem, 2rem); line-height: 1.9;">
-        {verse.telugu}
-      </div>
+  <section class="mt-10">
 
-    </article>
+    <h2 class="telugu mb-6 text-4xl text-[var(--color-accent)]">
+      వివరాలు
+    </h2>
 
-    <section class="mt-10">
+    <div class="telugu text-2xl leading-10 text-[rgba(43,43,43,.78)]">
+      ఈ శ్లోకానికి సంబంధించిన వివరణ త్వరలో చేర్చబడుతుంది.
+    </div>
 
-      <h2 class="telugu mb-6 text-4xl text-[var(--color-accent)]">
-        వివరాలు
-      </h2>
+  </section>
 
-      <div class="telugu text-2xl leading-10 text-[rgba(43,43,43,.78)]">
-        ఈ శ్లోకానికి సంబంధించిన వివరణ త్వరలో చేర్చబడుతుంది.
-      </div>
-
-    </section>
-
+  <!-- nav stays exactly as-is below this -->
     <nav
       class="telugu mt-12 flex flex-wrap justify-center gap-3 text-2xl"
     >

@@ -22,7 +22,9 @@ export type BookMetadata = {
 export type Verse = {
   number: string;
   telugu: string;
-  transliteration?: string;
+  sanskrit?: string;
+  kannada?: string;
+  transliteration?: string; // IAST
   notes?: string;
 };
 
@@ -84,7 +86,7 @@ function parseVerseFields(block: string): Verse | null {
   let current: string | null = null;
 
   for (const line of lines) {
-    const field = line.match(/^(number|telugu|transliteration|notes):\s*(.*)$/);
+    const field = line.match(/^(number|telugu|sanskrit|kannada|transliteration|notes):\s*(.*)$/);
     if (field) {
       current = field[1];
       fields.set(current, field[2] ? [field[2]] : []);
@@ -106,6 +108,8 @@ function parseVerseFields(block: string): Verse | null {
   return {
     number,
     telugu,
+    sanskrit: fields.get("sanskrit")?.join("\n").trim(),
+    kannada: fields.get("kannada")?.join("\n").trim(),
     transliteration: fields.get("transliteration")?.join("\n").trim(),
     notes: fields.get("notes")?.join("\n").trim(),
   };
