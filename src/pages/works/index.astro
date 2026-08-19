@@ -7,8 +7,8 @@ import { getBooks } from "@lib/library";
 const books = await getBooks();
 ---
 
-<BaseLayout title="కృతులు | వాగర్థౌ">
-  <SectionHeading title="కృతులు" />
+<BaseLayout title="కావ్యములు | వాగర్థౌ">
+  <SectionHeading title="కావ్యములు" />
 
   <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
     {books.map((book) => <BookCard book={book} />)}

@@ -6,9 +6,10 @@ type Props = {
     kannada?: string;
     transliteration?: string;
   };
+  showDetailsLink?: boolean;
 };
 
-const { verse } = Astro.props;
+const { verse, showDetailsLink = false } = Astro.props;
 
 const scripts = [
   { key: "telugu", label: "తెలుగు", text: verse.telugu, lang: "te" },
@@ -18,21 +19,25 @@ const scripts = [
 ].filter((s) => s.text);
 
 function panelClass(lang: string) {
-  const base = "script-panel sloka whitespace-pre-line text-[var(--color-ink)]";
+  const base =
+    "script-panel sloka whitespace-pre-line text-[var(--color-ink)]";
+
   if (lang === "te") return `${base} telugu`;
   if (lang === "iast") return `${base} iast-text`;
   if (lang === "sa") return `${base} sanskrit-text`;
   if (lang === "kn") return `${base} kannada-text`;
+
   return base;
 }
 ---
 
 {scripts.length > 1 && (
-  <div class="script-toggle mb-6 flex flex-wrap gap-2">
-{scripts.map((s, i) => (
-  <button
-    type="button"
-    class:list={[
+  <div class="script-toggle mb-8 flex flex-wrap items-center gap-2">
+
+    {scripts.map((s, i) => (
+      <button
+        type="button"
+        class:list={[
           "script-toggle-btn inline-flex h-10 items-center justify-center rounded border border-[rgba(184,144,58,0.35)] px-4 text-lg transition-colors data-[active=true]:border-[var(--color-gold)] data-[active=true]:bg-[rgba(184,144,58,0.12)] data-[active=true]:text-[var(--color-accent)] data-[active=true]:font-semibold",
           s.lang === "te" && "telugu",
           s.lang === "sa" && "devanagari-label",
@@ -43,6 +48,16 @@ function panelClass(lang: string) {
         {s.label}
       </button>
     ))}
+
+    {showDetailsLink && (
+      <a
+        href="#viseshaalu"
+        class="telugu inline-flex h-10 items-center justify-center rounded border border-[rgba(123,30,34,0.35)] px-4 text-lg text-[var(--color-accent)] transition-colors hover:border-[var(--color-accent)] hover:bg-[rgba(123,30,34,0.06)]"
+      >
+        విశేషాలు ↓
+      </a>
+    )}
+
   </div>
 )}
 
@@ -64,13 +79,18 @@ function panelClass(lang: string) {
         const key = btn.getAttribute("data-script");
 
         toggle.querySelectorAll(".script-toggle-btn").forEach((b) => {
-          b.setAttribute("data-active", b === btn ? "true" : "false");
+          b.setAttribute(
+            "data-active",
+            b === btn ? "true" : "false",
+          );
         });
 
         document.querySelectorAll("[data-script-panel]").forEach((panel) => {
           panel.setAttribute(
             "data-visible",
-            panel.getAttribute("data-script-panel") === key ? "true" : "false",
+            panel.getAttribute("data-script-panel") === key
+              ? "true"
+              : "false",
           );
         });
       });
@@ -96,8 +116,8 @@ function panelClass(lang: string) {
   }
 
   .kannada-text {
-  font-family: "Noto Serif Kannada", serif;
-  font-size: clamp(1.25rem, 1.45vw + 0.9rem, 1.65rem) !important;
-  line-height: 1.9 !important;
+    font-family: "Noto Serif Kannada", serif;
+    font-size: clamp(1.25rem, 1.45vw + 0.9rem, 1.65rem) !important;
+    line-height: 1.9 !important;
   }
 </style>

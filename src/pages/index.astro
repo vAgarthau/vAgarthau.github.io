@@ -2,6 +2,7 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 import BookCard from "@components/BookCard.astro";
 import MusicCard from "@components/MusicCard.astro";
+import StotramCard from "@components/StotramCard.astro";
 import SectionHeading from "@components/SectionHeading.astro";
 import { getBooks } from "@lib/library";
 
@@ -20,20 +21,20 @@ const books = await getBooks();
 
 
   <section class="mb-20" aria-labelledby="works-heading">
-    <SectionHeading title="కృతులు" />
+    <SectionHeading title="కావ్యములు" />
       <section class="mx-auto mb-20 max-w-3xl text-center">
   <p class="telugu text-3xl leading-10 text-[rgba(43,43,43,0.78)]">
      కొన్ని సాహిత్యమణులను తెలుగులిపిలో యూనికోడ్ రూపంలో భద్రపరచాలనే సంకల్పం.
   </p>
   </section>
-    <div id="works-heading" class="sr-only">కృతులు</div>
+    <div id="works-heading" class="sr-only">కావ్యములు</div>
     <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {books.map((book) => <BookCard book={book} />)}
     </div>
   </section>
 
   <section class="mb-20" aria-labelledby="music-heading">
-    <SectionHeading title="గీతాలు" />
+    <SectionHeading title="గీతములు" />
 
     <section class="mx-auto mb-20 max-w-3xl text-center">
       <p class="telugu text-3xl leading-10 text-[rgba(43,43,43,0.78)]">
@@ -41,7 +42,7 @@ const books = await getBooks();
       </p>
     </section>
 
-    <div id="music-heading" class="sr-only">గీతాలు</div>
+    <div id="music-heading" class="sr-only">గీతములు</div>
 
     <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       <MusicCard
@@ -50,5 +51,24 @@ const books = await getBooks();
       />
     </div>
   </section>
+
+  <section class="mb-20" aria-labelledby="stotram-heading">
+  <SectionHeading title="స్తోత్రములు" />
+
+  <section class="mx-auto mb-20 max-w-3xl text-center">
+    <p class="telugu text-3xl leading-10 text-[rgba(43,43,43,0.78)]">
+      కొన్ని స్తోత్రమణులను తెలుగులిపిలో యూనికోడ్ రూపంలో భద్రపరచాలనే సంకల్పం.
+    </p>
+  </section>
+
+  <div id="stotram-heading" class="sr-only">స్తోత్రములు</div>
+
+  <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    <StotramCard
+      title="నారాయణాష్టకం"
+      author="శ్రీకృష్ణ బ్రహ్మతంత్ర పరకాల స్వామివారు"
+    />
+  </div>
+</section>
   
 </BaseLayout>
