@@ -1,0 +1,35 @@
+---
+type Props = {
+  title: string;
+  composer?: string;
+};
+
+const { title, composer } = Astro.props;
+---
+
+<a
+  href="/music/bhavayami-raghuramam/"
+  class="group block border border-[rgba(123,30,34,0.12)] bg-[var(--color-paper)] px-8 py-10 transition-all duration-200 hover:border-[var(--color-accent)]"
+>
+  <h3
+    class="telugu text-center text-4xl leading-tight text-[var(--color-accent)] transition-colors duration-200 group-hover:text-[var(--color-ink)]"
+  >
+    {title}
+  </h3>
+
+  {composer && (
+    <>
+      <div class="mx-auto my-6 h-px w-16 bg-[rgba(184,144,58,0.45)]"></div>
+
+      <div class="text-center">
+        <p class="telugu text-xl tracking-[0.05em] text-[var(--color-gold)]">
+          స్వరకర్త
+        </p>
+
+        <p class="telugu mt-3 text-2xl leading-8 text-[rgba(43,43,43,0.68)]">
+          {composer}
+        </p>
+      </div>
+    </>
+  )}
+</a>

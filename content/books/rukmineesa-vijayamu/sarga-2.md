@@ -729,17 +729,14 @@ sanskrit:
 number: 55
 telugu:
 న చోగ్రశాపాదసురత్వమేషాం విహాయ దుష్టం కమపి స్వనిష్ఠం
-
 యతోభిశప్తేపి నృపే తదేతదభూత్పరా కిఞ్కర దైత్యయోగాత్
 
 transliteration:
 na cograśāpādasuratvameṣāṃ vihāya duṣṭaṃ kamapi svaniṣṭhaṃ
-
 yatobhiśaptepi nṛpe tadetadabhūtparā kiñkara daityayogāt
 
 sanskrit:
 न चोग्रशापादसुरत्वमेषां विहाय दुष्टं कमपि स्वनिष्ठं
-
 यतोभिशप्तेपि नृपे तदेतदभूत्परा किङ्कर दैत्ययोगात्
 
 ---verse---

@@ -1,0 +1,18 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import MusicCard from "@components/MusicCard.astro";
+import SectionHeading from "@components/SectionHeading.astro";
+---
+
+<BaseLayout title="సంగీతాలు | వాగర్థౌ">
+
+  <SectionHeading title="సంగీతాలు" />
+
+  <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    <MusicCard
+      title="భావయామి రఘురామం"
+      composer="శ్రీ స్వాతి తిరునాళ్ రామవర్మ"
+    />
+  </div>
+
+</BaseLayout>

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 import BookCard from "@components/BookCard.astro";
+import MusicCard from "@components/MusicCard.astro";
 import SectionHeading from "@components/SectionHeading.astro";
 import { getBooks } from "@lib/library";
 
@@ -31,5 +32,23 @@ const books = await getBooks();
     </div>
   </section>
 
+  <section class="mb-20" aria-labelledby="music-heading">
+    <SectionHeading title="సంగీతాలు" />
 
+    <section class="mx-auto mb-20 max-w-3xl text-center">
+      <p class="telugu text-3xl leading-10 text-[rgba(43,43,43,0.78)]">
+        కొన్ని సంగీతమణులను తెలుగులిపిలో యూనికోడ్ రూపంలో భద్రపరచాలనే సంకల్పం.
+      </p>
+    </section>
+
+    <div id="music-heading" class="sr-only">సంగీతాలు</div>
+
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <MusicCard
+        title="భావయామి రఘురామం"
+        composer="శ్రీ స్వాతి తిరునాళ్ రామవర్మ"
+      />
+    </div>
+  </section>
+  
 </BaseLayout>

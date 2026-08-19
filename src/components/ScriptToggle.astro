@@ -22,6 +22,7 @@ function panelClass(lang: string) {
   if (lang === "te") return `${base} telugu`;
   if (lang === "iast") return `${base} iast-text`;
   if (lang === "sa") return `${base} sanskrit-text`;
+  if (lang === "kn") return `${base} kannada-text`;
   return base;
 }
 ---
@@ -92,5 +93,11 @@ function panelClass(lang: string) {
 
   .sanskrit-text {
     font-family: "Noto Serif Devanagari", serif;
+  }
+
+  .kannada-text {
+  font-family: "Noto Serif Kannada", serif;
+  font-size: clamp(1.25rem, 1.45vw + 0.9rem, 1.65rem) !important;
+  line-height: 1.9 !important;
   }
 </style>

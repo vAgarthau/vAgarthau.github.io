@@ -1,0 +1,219 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import PageTitle from "@components/PageTitle.astro";
+import ScriptToggle from "@components/ScriptToggle.astro";
+
+const song = {
+  telugu: `భావయామి రఘురామం భవ్యసుగుణారామం 
+భావుక వితరణ పరాపాంగలీలాలసితం  
+
+దినకరాన్వయతిలకం దివ్య గాధి సుతసవనా
+వన రచిత సుబాహుముఖవధం అహల్యాపావనం 
+అనఘం ఈశచాపభంగం జనకసుతాప్రాణేశం 
+ఘనకుపిత భృగురామ గర్వ హరం ఇత సాకేతం    
+ 
+విహతాభిషేకం అథ విపిన గతం ఆర్యవాచా 
+సహిత సీతా సౌమిత్రిం శాంతతమశీలం 
+గుహనిలయగతం చిత్రకూటాగత భరతదత్త
+మహితరత్నమయపాదుకం మదనసుందరాంగం        
+
+వితత దండకారణ్యక గత విరాధ దలనం
+సుచరిత ఘటజ దత్త అనుపమిత వైష్ణవాస్త్రం 
+పతగవర జటాయునుతం పంచవటీవిహితవాసం
+అతి ఘోర శూర్పణఖా వచనాగత ఖరాది హరం   
+
+కనక మృగ రూపధర ఖల మారీచ హరం ఇహ 
+సుజన విమత దశాస్య హృత జనకజాన్వేషణం 
+అనఘం పంపాతీర సంగతాంజనేయ నభోమణీ 
+తనుజ సఖ్యకరం వాలి తను దలనం ఈశం   
+
+వానరోత్తమ సహిత వాయుసూనుకరార్పిత  
+భానుశతభాస్వర భవ్య రత్నాంగులీయం 
+తేన పునరానీత అన్యూన చూడామణి దర్శనం 
+శ్రీనిధిం ఉదధి తీర ఆశ్రిత విభీషణ మిలితం 
+
+కలితవర సేతుబంధం ఖల నిస్సీమ పిశితాశన 
+దలనం ఉరు దశకంఠ విదారం అతి ధీరం 
+జ్వలన పూత జనక సుతా సహిత యాత సాకేతం 
+విలసిత పట్టాభిషేకం విశ్వపాలం పద్మనాభం`,
+
+  sanskrit: `भावयामि रघुरामं भव्यसुगुणारामं
+भावुक वितरण परापांगलीलालसितं
+
+दिनकरान्वयतिलकं दिव्य गाधि सुतसवना
+वन रचित सुबाहुमुखवधं अहल्यापावनं
+अनघं ईशचापभंगं जनकसुताप्राणेशं
+घनकुपित भृगुराम गर्व हरं इत साकेतं
+
+विहताभिषेकं अथ विपिन गतं आर्यवाचा
+सहित सीता सौमित्रिं शांततमशीलं
+गुहनिलयगतं चित्रकूटागत भरतदत्त
+महितरत्नमयपादुकं मदनसुंदरांगं
+
+वितत दंडकारण्यक गत विराध दलनं
+सुचरित घटज दत्त अनुपमित वैष्णवास्त्रं
+पतगवर जटायुनुतं पंचवटीविहितवासं
+अति घोर शूर्पणखा वचनागत खरादि हरं
+
+कनक मृग रूपधर खल मारीच हरं इह
+सुजन विमत दशास्य हृत जनकजान्वेषणं
+अनघं पंपातीर संगतांजनेय नभोमणी
+तनुज सख्यकरं वालि तनु दलनं ईशं
+
+वानरोत्तम सहित वायुसूनुकरार्पित
+
+भानुशतभास्वर भव्य रत्नांगुलीयं
+तेन पुनरानीत अन्यून चूडामणि दर्शनं
+श्रीनिधिं उदधि तीर आश्रित विभीषण मिलितं
+
+कलितवर सेतुबंधं खल निस्सीम पिशिताशन
+दलनं उरु दशकंठ विदारं अति धीरं
+ज्वलन पूत जनक सुता सहित यात साकेतं
+विलसित पट्टाभिषेकं विश्वपालं पद्मनाभं`,
+
+  kannada: `ಭಾವಯಾಮಿ ರಘುರಾಮಂ ಭವ್ಯಸುಗುಣಾರಾಮಂ
+ಭಾವುಕ ವಿತರಣ ಪರಾಪಾಂಗಲೀಲಾಲಸಿತಂ
+
+ದಿನಕರಾನ್ವಯತಿಲಕಂ ದಿವ್ಯ ಗಾಧಿ ಸುತಸವನಾ
+ವನ ರಚಿತ ಸುಬಾಹುಮುಖವಧಂ ಅಹಲ್ಯಾ ಪಾವನಂ
+ಅನಘಂ ಈಶಚಾಪಭಂಗಂ ಜನಕಸುತಾಪ್ರಾಣೇಶಂ
+ಘನಕುಪಿತ ಭೃಗುರಾಮ ಗರ್ವ ಹರಂ ಇತ ಸಾಕೇತಂ
+
+ವಿಹತಾಭಿಷೇಕಂ ಅಥ ವಿಪಿನ ಗತಂ ಆರ್ಯವಾಚಾ
+ಸಹಿತ ಸೀತಾ ಸೌಮಿತ್ರಿಂ ಶಾಂತತಮಶೀಲಂ
+ಗುಹನಿಲಯಗತಂ ಚಿತ್ರಕೂಟಾಗತ ಭರತದತ್ತ
+ಮಹಿತರತ್ನಮಯ ಪಾದುಕಂ ಮದನಸುಂದರಾಂಗಂ
+
+ವಿತತ ದಂಡಕಾರಣ್ಯಕ ಗತ ವಿರಾಧ ದಳನಂ
+ಸುಚರಿತ ಘಟಜ ದತ್ತ ಅನುಪಮಿತ ವೈಷ್ಣವಾಸ್ತ್ರಂ
+ಪತಗವರ ಜಟಾಯುನುತಂ ಪಂಚವಟೀ ವಿಹಿತವಾಸಂ
+ಅತಿ ಘೋರ ಶೂರ್ಪಣಖಾ ವಚನಾಗತ ಖರಾದಿ ಹರಂ
+
+ಕನಕ ಮೃಗ ರೂಪಧರ ಖಲ ಮಾರೀಚ ಹರಂ ಇಹ
+ಸುಜನ ವಿಮತ ದಶಾಶ್ಯ ಹೃತ ಜನಕಜಾನ್ವೇಷಣಂ
+ಅನಘಂ ಪಂಪಾತೀರ ಸಂಗತಾಂಜನೇಯ ನಭೋಮಣೀ
+ತನುಜ ಸಖ್ಯಕರಂ ವಾಲಿ ತನು ದಳನಂ ಈಶಂ
+
+ವಾನರೋತ್ತಮ ಸಹಿತ ವಾಯುಸೂನುಕರಾರ್ಪಿತ
+ಭಾನುಶತಭಾಸ್ವರ ಭವ್ಯ ರತ್ನಾಂಗುಲೀಯಂ
+ತೇನ ಪುನರಾನೀತ ಅನ್ಯೂನ ಚೂಡಾಮಣಿ ದರ್ಶನಂ
+ಶ್ರೀನಿಧಿಂ ಉದಧಿ ತೀರ ಆಶ್ರಿತ ವಿಭೀಷಣ ಮಿಲಿಿತಂ
+
+ಕಲಿತವರ ಸೇತುಬಂಧಂ ಖಲ ನಿಸ್ಸೀಮ ಪಿಶಿತಾಶನ
+ದಳನಮ್ ಉರು ದಶಕಂಠ ವಿದಾರಮ್ ಅತಿಧೀರಂ
+ಜ್ವಲನ ಪೂತ ಜನಕ ಸುತಾ ಸಹಿತ ಯಾತ ಸಾಕೇತಂ
+ವಿಲಸಿತ ಪಟ್ಟಾಭಿಷೇಕಂ ವಿಶ್ವಪಾಲಂ ಪದ್ಮನಾಭಂ`,
+
+  transliteration: `bhāvayāmi raghurāmaṃ bhavyasuguṇārāmaṃ
+bhāvuka vitaraṇa parāpāṃgalīlālasitaṃ
+
+dinakarānvayatilakaṃ divya gādhi sutasavanā
+vana racita subāhumukhavadhaṃ ahalyāpāvanaṃ
+anaghaṃ īśacāpabhaṃgaṃ janakasutāprāṇeśaṃ
+ghanakupita bhṛgurāma garva haraṃ ita sāketaṃ
+
+vihatābhiṣekaṃ atha vipina gataṃ āryavācā
+sahita sītā saumitriṃ śāṃtatamaśīlaṃ
+guhanilayagataṃ citrakūṭāgata bharatadatta
+mahitaratnamayapādukaṃ madanasuṃdarāṃgaṃ
+
+vitata daṃḍakāraṇyaka gata virādha dalanaṃ
+sucarita ghaṭaja datta anupamita vaiṣṇavāstraṃ
+patagavara jaṭāyunutaṃ paṃcavaṭīvihitavāsaṃ
+ati ghora śūrpaṇakhā vacanāgata kharādi haraṃ
+
+kanaka mṛga rūpadhara khala mārīca haraṃ iha
+sujana vimata daśāsya hṛta janakajānveṣaṇaṃ
+anaghaṃ paṃpātīra saṃgatāṃjaneya nabhomaṇī
+tanuja sakhyakaraṃ vāli tanu dalanaṃ īśaṃ
+
+vānarottama sahita vāyusūnukarārpita
+bhānuśatabhāsvara bhavya ratnāṃgulīyaṃ
+tena punarānīta anyūna cūḍāmaṇi darśanaṃ
+śrīnidhiṃ udadhi tīra āśrita vibhīṣaṇa militaṃ
+
+kalitavara setubaṃdhaṃ khala nissīma piśitāśana
+dalanaṃ uru daśakaṃṭha vidāraṃ ati dhīraṃ
+jvalana pūta janaka sutā sahita yāta sāketaṃ
+vilasita paṭṭābhiṣekaṃ viśvapālaṃ padmanābhaṃ`
+};
+---
+
+<BaseLayout title="భావయామి రఘురామం | వాగర్థౌ">
+
+  <PageTitle
+    eyebrow="సంగీతాలు"
+    title="భావయామి రఘురామం"
+  />
+
+<section class="mb-10 border-b border-[rgba(184,144,58,0.24)] pb-2">
+
+  <div class="grid grid-cols-1 gap-x-8 sm:grid-cols-2">
+
+    <!-- Composer -->
+    <div class="border-b border-[rgba(184,144,58,0.24)] py-4">
+      <p class="telugu text-xl text-[var(--color-gold)]">
+        స్వరకర్త
+      </p>
+
+      <p class="telugu mt-2 text-2xl leading-8 text-[rgba(43,43,43,0.78)]">
+        <a
+    href="https://te.wikipedia.org/wiki/%E0%B0%B8%E0%B1%8D%E0%B0%B5%E0%B0%BE%E0%B0%A4%E0%B0%BF_%E0%B0%A4%E0%B0%BF%E0%B0%B0%E0%B1%81%E0%B0%A8%E0%B0%BE%E0%B0%B3%E0%B1%8D"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="border-b border-[var(--color-gold)] transition-colors hover:text-[var(--color-accent)]"
+  >
+    శ్రీ స్వాతి తిరునాళ్ రామవర్మ
+  </a>
+      </p>
+    </div>
+
+    <!-- Raga -->
+    <div class="border-b border-[rgba(184,144,58,0.24)] py-4">
+      <p class="telugu text-xl text-[var(--color-gold)]">
+        రాగం
+      </p>
+
+      <p class="telugu mt-2 text-2xl leading-8 text-[rgba(43,43,43,0.78)]">
+        <a
+          href="https://en.wikipedia.org/wiki/Saveri"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="border-b border-[var(--color-gold)] transition-colors hover:text-[var(--color-accent)]"
+        >
+          సావేరి
+        </a>
+
+        <span class="mx-1">/</span>
+
+        <a
+          href="https://te.wikipedia.org/wiki/%E0%B0%B0%E0%B0%BE%E0%B0%97%E0%B0%AE%E0%B0%BE%E0%B0%B2%E0%B0%BF%E0%B0%95"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="border-b border-[var(--color-gold)] transition-colors hover:text-[var(--color-accent)]"
+        >
+          రాగమాలిక
+        </a>
+      </p>
+    </div>
+
+    <!-- Tala -->
+    <div class="py-4">
+      <p class="telugu text-xl text-[var(--color-gold)]">
+        తాళం
+      </p>
+
+      <p class="telugu mt-2 text-2xl leading-8 text-[rgba(43,43,43,0.78)]">
+        రూపకం
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+  <article class="mx-auto max-w-5xl">
+    <ScriptToggle verse={song} />
+  </article>
+
+</BaseLayout>
