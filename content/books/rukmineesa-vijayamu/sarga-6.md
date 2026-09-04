@@ -855,7 +855,7 @@ sanskrit:
 number: 53
 telugu:
 గోపన్యాఞ్జనరూషితం స్వనయనం కుర్వంత్యగాసత్వరా
-తౙ్ఞానాఞ్జనతుష్టధీరివ పదోర్భూషాం స్వదోష్ణీతరా
+తజ్ఞానాఞ్జనతుష్టధీరివ పదోర్భూషాం స్వదోష్ణీతరా
 సంధాయాచ్యుతసన్నిధిం సమగమత్ కృష్ణాంఘ్రిసేవాం సదా
 తన్వంత్యాః కరభూషణం మమ భవేత్ తత్పాదయోర్భూషణం 
 
@@ -902,11 +902,11 @@ sanskrit:
 ---verse---
 number: 56
 telugu:
-యదీశ తేషాం హితమేవ కార్యం తదాఙ్గ నాఙ్ఞాపయ గన్తుమస్మాన్ 
+యదీశ తేషాం హితమేవ కార్యం తదాఙ్గ నాజ్ఞాపయ గన్తుమస్మాన్ 
 వియోగదగ్ధైర్బత నః శరీరైః మహీం న తాం ప్రేతమహీం విధేహి  
 
 transliteration:
-yadīśa teṣāṃ hitameva kāryaṃ tadāṅga nāṅñāpaya gantumasmān 
+yadīśa teṣāṃ hitameva kāryaṃ tadāṅga nājñāpaya gantumasmān 
 viyogadagdhairbata naḥ śarīraiḥ mahīṃ na tāṃ pretamahīṃ vidhehi  
 
 sanskrit:
