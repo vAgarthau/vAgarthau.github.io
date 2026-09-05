@@ -923,15 +923,15 @@ sanskrit:
 number: 60
 telugu:
 శ్రీరేవ సా భీష్మసుతా మనోజ్ఞా శ్రీవల్లభోయం సుభగాగ్రగణ్యః
-ఏతౌ సమేతౌ భవతామితీమే ధారారమాత్మేష్టదమర్థయన్తే
+ఏతౌ సమేతౌ భవతామితీమే ధాతారమాత్మేష్టదమర్థయన్తే
 
 transliteration:
 śrīreva sā bhīṣmasutā manojñā śrīvallabhoyaṃ subhagāgragaṇyaḥ
-etau sametau bhavatāmitīme dhārāramātmeṣṭadamarthayaṃte
+etau sametau bhavatāmitīme dhātāramātmeṣṭadamarthayaṃte
 
 sanskrit:
 श्रीरेव सा भीष्मसुता मनोज्ञा श्रीवल्लभोयं सुभगाग्रगण्यः
-एतौ समेतौ भवतामितीमे धारारमात्मेष्टदमर्थयंते
+एतौ समेतौ भवतामितीमे धातारमात्मेष्टदमर्थयंते
 
 ---verse---
 number: 61
