@@ -39,11 +39,11 @@ telugu:
 
 transliteration:
 kṛṣṇaḥ svadarśanasudarśanamenamātma vidyādharānvayamamūmucadabjanetraḥ
-tatpādapūtatanuruttamapūruṣāṅghri prītyaiva tasya padameva jagāma so'pi
+tatpādapūtatanuruttamapūruṣāṅghri prītyaiva tasya padameva jagāma sopi
 
 sanskrit:
 कृष्णः स्वदर्शनसुदर्शनमेनमात्म विद्याधरान्वयममूमुचदब्जनेत्रः
-तत्पादपूततनुरुत्तमपूरुषाङ्घ्रि प्रीत्यैव तस्य पदमेव जगाम सोऽपि
+तत्पादपूततनुरुत्तमपूरुषाङ्घ्रि प्रीत्यैव तस्य पदमेव जगाम सोपि
 
 ---verse---
 number: 4
@@ -100,11 +100,11 @@ telugu:
 దోష్ణా తదుత్పాటయతో మురారేః కుర్వన్ శిరోభారజిహీర్షయేవ
 
 transliteration:
-agre nidhāya svaviṣāṇayugmamugro'cyutaṃ pratyagamat sahāyam
+agre nidhāya svaviṣāṇayugmamugrocyutaṃ pratyagamat sahāyam
 doṣṇā tadutpāṭayato murāreḥ kurvan śirobhārajihīrṣayeva
 
 sanskrit:
-अग्रे निधाय स्वविषाणयुग्ममुग्रोऽच्युतं प्रत्यगमत् सहायम्
+अग्रे निधाय स्वविषाणयुग्ममुग्रोच्युतं प्रत्यगमत् सहायम्
 दोष्णा तदुत्पाटयतो मुरारेः कुर्वन् शिरोभारजिहीर्षयेव
 
 ---verse---
@@ -213,15 +213,15 @@ telugu:
 
 transliteration:
 taddhairyaṃ jarayan balaṃ ca śāmayannaṅgaṃ muhuḥ kampaya-
-nnakṣebhyo'paṭutāṃ diśan dṛḍhatarān dantān balātpāṭayan
+nnakṣebhyopaṭutāṃ diśan dṛḍhatarān dantān balātpāṭayan
 tacchvāsaṃ skhalayan jareva bahuśastadyauvanaṃ dūrayan
-hasto'sau vavṛdhe'ntarantakapurātithyaṃ dviṣaḥ sūcayan
+hastosau vavṛdhentarantakapurātithyaṃ dviṣaḥ sūcayan
 
 sanskrit:
 तद्धैर्यं जरयन् बलं च शामयन्नङ्गं मुहुः कम्पय-
-न्नक्षेभ्योऽपटुतां दिशन् दृढतरान् दन्तान् बलात्पाटयन्
+न्नक्षेभ्योपटुतां दिशन् दृढतरान् दन्तान् बलात्पाटयन्
 तच्छ्वासं स्खलयन् जरेव बहुशस्तद्यौवनं दूरयन्
-हस्तोऽसौ ववृधेऽन्तरन्तकपुरातिथ्यं द्विषः सूचयन्
+हस्तोसौ ववृधेन्तरन्तकपुरातिथ्यं द्विषः सूचयन्
 
 ---verse---
 number: 15
@@ -245,11 +245,11 @@ telugu:
 
 transliteration:
 atho vipakṣaṃ kuśalena nindan surarṣirabhyetya śaśaṃsa kaṃsam
-pitā na so'yaṃ tava bhojarājastvamaṅga māyāmayajārajātaḥ
+pitā na soyaṃ tava bhojarājastvamaṅga māyāmayajārajātaḥ
 
 sanskrit:
 अथो विपक्षं कुशलेन निन्दन् सुरर्षिरभ्येत्य शशंस कंसम्
-पिता न सोऽयं तव भोजराजस्त्वमङ्ग मायामयजारजातः
+पिता न सोयं तव भोजराजस्त्वमङ्ग मायामयजारजातः
 
 ---verse---
 number: 17
@@ -258,12 +258,12 @@ telugu:
 సురేశ్వరోసౌ వసుదేవసూనుః సురాశ్చ తత్పక్షగతాః సమస్తాః
 
 transliteration:
-tavānugā ye bhuvi dānavāste tvagragaṇyo'surasañcayeṣu
-sureśvaro'sau vasudevasūnuḥ surāśca tatpakṣagatāḥ samastāḥ
+tavānugā ye bhuvi dānavāste tvagragaṇyosurasañcayeṣu
+sureśvarosau vasudevasūnuḥ surāśca tatpakṣagatāḥ samastāḥ
 
 sanskrit:
-तवानुगा ये भुवि दानवास्ते त्वमग्रगण्योऽसुरसञ्चयेषु
-सुरेश्वरोऽसौ वसुदेवसूनुः सुराश्च तत्पक्षगताः समस्ताः
+तवानुगा ये भुवि दानवास्ते त्वमग्रगण्योसुरसञ्चयेषु
+सुरेश्वरोसौ वसुदेवसूनुः सुराश्च तत्पक्षगताः समस्ताः
 
 ---verse---
 number: 18
@@ -272,11 +272,11 @@ telugu:
 త్వదీయభీత్యానకదుందుభిస్తం నినాయ మిత్రాలయమాలయాత్ తే
 
 transliteration:
-dhṛtaḥ sa garbhe vasudevapatnyā tataḥ prasūtastava mandire'smin
+dhṛtaḥ sa garbhe vasudevapatnyā tataḥ prasūtastava mandiresmin
 tvadīyabhītyānakadundubhistaṃ nināya mitrālayamālayāt te
 
 sanskrit:
-धृतः स गर्भे वसुदेवपत्न्या ततः प्रसूतस्तव मन्दिरेऽस्मिन्
+धृतः स गर्भे वसुदेवपत्न्या ततः प्रसूतस्तव मन्दिरेस्मिन्
 त्वदीयभीत्यानकदुन्दुभिस्तं निनाय मित्रालयमालयात् ते
 
 ---verse---
@@ -328,11 +328,11 @@ telugu:
 మృగాధిపగ్రస్తవిముక్తవీక్షిత స్వవర్గహృష్యన్మృగశావవిభ్రమః
 
 transliteration:
-itīrayitvābjajaneḥ sute gate'vyadṛśyatāriprahitaḥ śvaphalkajaḥ
+itīrayitvābjajaneḥ sute gatevyadṛśyatāriprahitaḥ śvaphalkajaḥ
 mṛgādhipagrastavimuktavīkṣita svavargahṛṣyanmṛgaśāvavibhramaḥ
 
 sanskrit:
-इतीरयित्वाब्जजनेः सुते गतेऽव्यदृश्यतारिप्रहितः श्वफल्कजः
+इतीरयित्वाब्जजनेः सुते गतेव्यदृश्यतारिप्रहितः श्वफल्कजः
 मृगाधिपग्रस्तविमुक्तवीक्षित स्ववर्गहृष्यन्मृगशावविभ्रमः
 
 ---verse---
@@ -443,13 +443,13 @@ transliteration:
 tīrthaṃ sevitameva yatpadarajo juṣṭaṃ surāḥ satkṛtā
 yenāliṅgitavānahaṃ tava vapuścīrṇā ca puṇyakriyā
 yallabdhaṃ tava darśanaṃ paracito vedaśca yat te śrutaṃ
-kalyāṇaṃ vacanaṃ bhavo'pi na bhavatsāmīpyabhājo mama
+kalyāṇaṃ vacanaṃ bhavopi na bhavatsāmīpyabhājo mama
 
 sanskrit:
 तीर्थं सेवितमेव यत्पदरजो जुष्टं सुराः सत्कृता
 येनालिङ्गितवानहं तव वपुश्चीर्णा च पुण्यक्रिया
 यल्लब्धं तव दर्शनं परिचितो वेदश्च यत् ते श्रुतं
-कल्याणं वचनं भवोऽपि न भवत्सामीप्यभाजो मम
+कल्याणं वचनं भवोपि न भवत्सामीप्यभाजो मम
 
 ---verse---
 number: 30
@@ -461,13 +461,13 @@ telugu:
 
 transliteration:
 kiṃ viṣṇo bahunoditena viditaṃ viśvaṃ bhavaddarśanā-
-cchatrurmitramabhūdbhavo'pi yadahaṃ kaṃsena sampreṣitaḥ
+cchatrurmitramabhūdbhavopi yadahaṃ kaṃsena sampreṣitaḥ
 adrākṣaṃ tava sundaraṃ vapurayaṃ sarvajñacūḍāamaṇe
 praśnaste nṛviḍambanāya mama ca pratyuktirīśedṛśī
 
 sanskrit:
 किं विष्णो बहुनोदितेन विदितं विश्वं भवद्दर्शना-
-च्छत्रुर्मित्रमभूद्भवोऽपि यदहं कंसेन सम्प्रेषितः
+च्छत्रुर्मित्रमभूद्भवोपि यदहं कंसेन सम्प्रेषितः
 अद्राक्षं तव सुन्दरं वपुरयं सर्वज्ञचूडाअमणे
 प्रश्नस्ते नृविडम्बनाय मम च प्रत्युक्तिरीशेदृशी
 
@@ -554,12 +554,12 @@ telugu:
 యువయోరవినాభావమక్ష్యైరీక్షామహేధునా
 
 transliteration:
-yiyāsuṃ tvāṃ samālokya naḥ prāṇo'pi yiyāsati
-yuvayoravinābhāvamakṣyairīkṣāmahe'dhunā
+yiyāsuṃ tvāṃ samālokya naḥ prāṇopi yiyāsati
+yuvayoravinābhāvamakṣyairīkṣāmahedhunā
 
 sanskrit:
-यियासुं त्वां समालोक्य नः प्राणोऽपि यियासति
-युवयोरविनाभावमक्ष्यैरीक्षामहेऽधुना
+यियासुं त्वां समालोक्य नः प्राणोपि यियासति
+युवयोरविनाभावमक्ष्यैरीक्षामहेधुना
 
 ---verse---
 number: 37
@@ -612,16 +612,16 @@ telugu:
 తం ప్రాణేన వియోజయత్వతిమదం దేవోస్మదీయో విభుః
 
 transliteration:
-bhṛtyo'yaṃ kimu santanotu sa paraṃ pratyarthibhūtaḥ satāṃ
-kaṃsastaddhanurutsavo'stu nihato bhagnaṃ ca bhūyāddhanuḥ
-yo'smatprāṇasamaṃ viyojayati hā smerānanaṃ śrīpatiṃ
-taṃ prāṇena viyojayatvatimadaṃ devo'smadīyo vibhuḥ
+bhṛtyoyaṃ kimu santanotu sa paraṃ pratyarthibhūtaḥ satāṃ
+kaṃsastaddhanurutsavostu nihato bhagnaṃ ca bhūyāddhanuḥ
+yosmatprāṇasamaṃ viyojayati hā smerānanaṃ śrīpatiṃ
+taṃ prāṇena viyojayatvatimadaṃ devosmadīyo vibhuḥ
 
 sanskrit:
-भृत्योऽयं किमु सन्तनोतु स परं प्रत्यर्थिभूतः सतां
-कंसस्तद्धनुरुत्सवोऽस्तु निहतो भग्नं च भूयाद्धनुः
-योऽस्मत्प्राणसमं वियोजयति हा स्मेराननं श्रीपतिं
-तं प्राणेन वियोजयत्वतिमदं देवोऽस्मदीयो विभुः
+भृत्योयं किमु सन्तनोतु स परं प्रत्यर्थिभूतः सतां
+कंसस्तद्धनुरुत्सवोस्तु निहतो भग्नं च भूयाद्धनुः
+योस्मत्प्राणसमं वियोजयति हा स्मेराननं श्रीपतिं
+तं प्राणेन वियोजयत्वतिमदं देवोस्मदीयो विभुः
 
 ---verse---
 number: 41
@@ -633,13 +633,13 @@ telugu:
 
 transliteration:
 jigamiṣasi murāre rājadhānīṃ yadītaḥ
-śrutitatijita yāhi śrīḥ śubhā tatra te'stu
+śrutitatijita yāhi śrīḥ śubhā tatra testu
 sukhada tadupasargaṃ saumya sandhehi śīghraṃ
 ghaṭaya ghaṭaka no cennastavaivopasargam
 
 sanskrit:
 जिगमिषसि मुरारे राजधानीं यदीतः
-श्रुतिततिजित याहि श्रीः शुभा तत्र तेऽस्तु
+श्रुतिततिजित याहि श्रीः शुभा तत्र तेस्तु
 सुखद तदुपसर्गं सौम्य सङ्धेहि शीघ्रं
 घटय घटक नो चेन्नस्तवैवोपसर्गम्
 
@@ -704,12 +704,12 @@ telugu:
 జగామ శౌరిర్న విజేతుకామో నివార్యమాణోపి నివర్తతే స్మ
 
 transliteration:
-sa vallavīnāṃ praṇayākhyadāmnā nibaddhyamāno'pi ripūn jighāṃsuḥ
-jagāma śaurirna vijetukāmo nivāryamāno'pi nivartate sma
+sa vallavīnāṃ praṇayākhyadāmnā nibaddhyamānopi ripūn jighāṃsuḥ
+jagāma śaurirna vijetukāmo nivāryamānopi nivartate sma
 
 sanskrit:
-स वल्लवीनां प्रणयाख्यदाम्ना निबद्ध्यमानोऽपि रिपून् जिघांसुः
-जगाम शौरिर्न विजेतुकामो निवार्यमाणोऽपि निवर्तते स्म
+स वल्लवीनां प्रणयाख्यदाम्ना निबद्ध्यमानोपि रिपून् जिघांसुः
+जगाम शौरिर्न विजेतुकामो निवार्यमाणोपि निवर्तते स्म
 
 ---verse---
 number: 46
@@ -718,11 +718,11 @@ telugu:
 దృగశ్వభాజా దృఢభక్తిదామ్నా మనోరథేనామలబుద్ధియంత్రా
 
 transliteration:
-rathena dūre ramaṇaṃ vrajantaṃ vrajastriyastaṃ parito'nujagmuḥ
+rathena dūre ramaṇaṃ vrajantaṃ vrajastriyastaṃ paritonujagmuḥ
 dṛgaśvabhājā dṛḍhabhaktidāmnā manorathenāmalabuddhiyantrā
 
 sanskrit:
-रथेन दूरे रमणं व्रजन्तं व्रजस्त्रियस्तं परितोऽनुजग्मुः
+रथेन दूरे रमणं व्रजन्तं व्रजस्त्रियस्तं परितोनुजग्मुः
 दृगश्वभाजा दृढभक्तिदाम्ना मनोरथेनामलबुद्धियन्त्रा
 
 ---verse---
@@ -768,13 +768,13 @@ telugu:
 దృశ్యం రూపమదర్శయన్మురరిపుర్దాస్యైకవశ్యః ప్రభుః
 
 transliteration:
-bhakto nāma sa eva yaḥ karagate kṛṣṇo'pi vedoditaṃ
+bhakto nāma sa eva yaḥ karagate kṛṣṇopi vedoditaṃ
 tatkarmācaradetadeva duritapradhvaṃsi karma kṣitau
 tīrthaṃ cāpi tadeva jātvapi tayoḥ saṃsevayā śrāvyayā
 dṛśyaṃ rūpamadarśayanmuraripurdāsyaikavaśyaḥ prabhuḥ
 
 sanskrit:
-भक्तो नाम स एव यः करगते कृष्णोऽपि वेदोदितं
+भक्तो नाम स एव यः करगते कृष्णोपि वेदोदितं
 तत्कर्माचरदेतदेव दुरितप्रध्वंसि कर्म क्षितौ
 तीर्थं चापि तदेव जात्वपि तयोः संसेवया श्राव्यया
 दृश्यं रूपमदर्शयन्मुररिपुर्दास्यैकवश्यः प्रभुः
@@ -1081,11 +1081,11 @@ telugu:
 
 transliteration:
 dṛṣṭvā tamamboruhapatranetraṃ tuṣṭāva tuṣṭākhila cittavṛttiḥ
-paścāt siṣeve rathasaṃsthitaṃ taṃ mukto'pi naivojjhati kṛṣṇasevām
+paścāt siṣeve rathasaṃsthitaṃ taṃ muktopi naivojjhati kṛṣṇasevām
 
 sanskrit:
 दृष्ट्वा तमम्बोरुहपत्रनेत्रं तुष्टाव तुष्टाखिल चित्तवृत्तिः
-पश्चात् सिषेवे रथसंस्थितं तं मुक्तोऽपि नैवोज्झति कृष्णसेवाम्
+पश्चात् सिषेवे रथसंस्थितं तं मुक्तोपि नैवोज्झति कृष्णसेवाम्
 
 ---verse---
 number: 72
@@ -1285,11 +1285,11 @@ telugu:
 
 transliteration:
 iti bruvantamakrūramāśvāsya madhuroktibhiḥ
-visasarja prabhorājñāṃ vidhitsuḥ so'pyagādgṛhān
+visasarja prabhorājñāṃ vidhitsuḥ sopyagādgṛhān
 
 sanskrit:
 इति ब्रुवन्तमक्रूरमाश्वास्य मधुरोक्तिभिः
-विससर्ज प्रभोराज्ञां विधित्सुः सोऽप्यगाद्गृहान्
+विससर्ज प्रभोराज्ञां विधित्सुः सोप्यगाद्गृहान्
 
 ---verse---
 number: 84
